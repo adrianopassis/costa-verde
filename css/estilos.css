@@ -38,9 +38,13 @@ header img {
 article {
   padding: 10px;
   border: 1px solid #95a4a5;
-  width: 370px;
-  float: left;
-  margin-right: 30px;
+
+}
+
+@media(min-width: 800px){
+  article{
+
+  }
 }
 
 article > h2 {
