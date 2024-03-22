@@ -38,6 +38,7 @@ header img {
 article {
   padding: 10px;
   border: 1px solid #95a4a5;
+<<<<<<< HEAD
  
 }
 
@@ -46,6 +47,14 @@ article {
     width: 30%;
     float:left;
     margin-right: 5%;
+=======
+
+}
+
+@media(min-width: 800px){
+  article{
+
+>>>>>>> 90e894222697c981ac7dbdfe98f0838257c39fb6
   }
 }
 
