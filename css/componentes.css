@@ -1,3 +1,4 @@
+
 /*--------------------*\
   PLANO
 \*--------------------*/
@@ -10,20 +11,20 @@
   font-size: 1.4rem; /* 14px */
 }
 
-.plano--mais-popular::after{
+.plano--mais-popular::after {
   position: absolute;
   top: -10px;
   left: -10px;
-  
-  padding: 0 10%;
+
+  padding: 0 10px;
 
   background-color: #c20303;
   color: #fff;
 
-  font-size: 0.7142em;
+  font-size: 0.7142em; /* 10px */
   line-height: 2.5;
 
-  content: "MAIS POPULAR" ;
+  content: "MAIS POPULAR";
 }
 
 .plano__cabecalho {
@@ -145,25 +146,24 @@
   }
 }
 
+
 /*--------------------*\
   DEPOIMENTO
 \*--------------------*/
-.depoimento{
-  position: relative;
-
-  font-size: 2.2rem;/*22px*/
+.depoimento {
+  font-size: 2.2rem; /* 22px */
 }
 
-@media(min-width: 992px){
-  .depoimento{
-    padding-left: 15px;
-    padding-right: 15px;
+@media(min-width: 992px) {
+  .depoimento {
+    padding-left: 15%;
+    padding-right: 15%;
 
     font-size: 2.8rem;
   }
 }
 
-.depoimento > blockquote{
+.depoimento > blockquote {
   position: relative;
 
   margin: 0;
@@ -173,49 +173,49 @@
   font-size: 1em;
 }
 
-.depoimento > blockquote::before{
+.depoimento > blockquote::before {
   position: absolute;
   left: 0;
   top: -0.35em;
 
   color: #ccc;
 
-  font-size: 8em;
+  font-size: 8em; /* 176px */
 
   content: "\201C";
 }
 
-.depoimento__autor{
+.depoimento__autor {
   margin-top: 40px;
 
   text-align: center;
   font-size: 0.7272em;
 }
 
-.depoimento__autor > img{
+.depoimento__autor > img {
   border-radius: 50%;
 }
 
-.depoimento__autor > p{
+.depoimento__autor > p {
   margin-top: 10px;
 }
 
-/*--------------------*\
- Navegação
-\*--------------------*/
 
-.navegacao{
+/*--------------------*\
+  NAVEGACAO
+\*--------------------*/
+.navegacao {
 }
 
-.navegacao__menu{
+.navegacao__menu {
   float: right;
 }
 
-/*--------------------*\
- BOTAO-CHAVEADOR
-\*--------------------*/
 
-.botao-chaveador{
+/*--------------------*\
+  BOTAO-CHAVEADOR
+\*--------------------*/
+.botao-chaveador {
   width: 24px;
   height: 24px;
   border: 0;
@@ -226,42 +226,65 @@
   outline: none;
 }
 
-@media(min-width:992px){
-  .botao-chaveador{
+@media(min-width: 992px) {
+  .botao-chaveador {
     display: none;
   }
 }
 
+
 /*--------------------*\
- BLOCO DE MENU
+  MENU
 \*--------------------*/
+.menu {
+  margin: 0;
 
-.menu{
-position:fixed; 
-top: 0%;
-left: 0;
-bottom: 0;
+  font-size: 1.4rem;
 
-width: 200px;
-margin: 0;
-padding: 20px;
-border-right: 1px solid #eee;
-
-font-size: 1.4rem;
-
-background-color: #fbfbfb;
-
-list-style: none;
+  list-style: none;
 }
 
-.menu__item{
-  display:block;
+@media(max-width: 991px) {
 
-  line-height: 3;
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    display: none;
+    width: 200px;
+    padding: 20px;
+    border-right: 1px solid #eee;
+
+    background-color: #fbfbfb;
+  }
+
+  .menu--exibindo {
+    display: block;
+  }
+
+  .menu__item {
+    display: block;
+
+    line-height: 3;
+  }
+
+  .menu__item--botao {
+    margin-top: 20px;
+  }
 
 }
 
-.menu__item--botao{
-  margin-top: 20px;
-}
+@media(min-width: 992px) {
 
+  .menu__item {
+    display: inline-block;
+    padding-right: 20px;
+  }
+
+  .menu__item:last-of-type {
+    padding-right: 0px;
+  }
+
+}
